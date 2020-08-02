@@ -1,0 +1,621 @@
+/* Stle reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/Roboto-Regular.ttf);
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+img:hover, .full-name:hover, .user-name:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Main Containers */
+.main-flex-container {
+  max-width: 1350px;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.left-flex-container {
+  flex: 1 0 22%;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  background:#fff; 
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgb(230, 236, 240);
+}
+.center-flex-container {
+ flex: 3 0 45%;
+ background:#fff;
+}
+.right-flex-container {
+  flex: 2 0 31%;
+  height: 100%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background:#fff;
+  border-left: 1px solid rgb(230, 236, 240);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+/* Left Navigation */
+.logo i{
+  color: #1da1f2;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.logo i:hover {
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.nav-links a {
+  font-weight: 750;
+  color: rgba(20, 23, 26, 0.93);
+  padding: 10px 15px;
+}
+
+.current-page a { color: rgba(29,161,242,1.00);}
+
+.nav-links a:hover {
+  background: rgba(29, 161, 242, 0.1);
+  color: #1da1f2;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+.nav-items {
+  margin: 1.2rem 2rem;
+  white-space: nowrap;
+}
+.nav-links i {
+  padding-right: 0.5rem;
+}
+.nav-links {
+  margin-top: -1rem;
+}
+
+.tweet a {
+  display: block;
+  margin: auto;
+  width: 100%;
+  color: #fff;
+  background: #1da1f2;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 5rem;
+  border-radius: 25px;
+}
+
+.tweet a:hover {
+  color: #fff;
+  background: #198ed6;
+}
+
+.profile-box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  align-self: center;
+  padding: 0 0.6rem;
+}
+.profile-box:hover {
+  background: rgba(29, 161, 242, 0.1);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.profile-box img {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.profile-box .full-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.profile-box .options-icon {
+  color: #39393a;
+  margin-left: 1rem;
+}
+
+.user-name {
+  color: #39393a;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Main Container */
+.home {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid rgb(230, 236, 240);
+  color: #39393a;
+  padding: 0.5rem 1rem;
+}
+
+/* home panel */
+.home h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.home i {
+  font-size: 1.4rem;
+  color: rgba(29,161,242,1.00);
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 50%
+}
+.home i:hover {
+  background: rgba(29, 161, 242, 0.1);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Create Tweet box */
+.post-tweet {
+  background: #fff;
+  border-bottom: 10px solid rgb(230, 236, 240);
+}
+.form-group-1 {
+  display: flex;
+  flex-flow: row;
+  padding: 0.3rem 1rem;
+}
+
+.post-tweet img {
+  display: inline-block;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center; 
+}
+
+.post-tweet input {
+  width: 90%;
+  height: 60px;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.post-tweet input::placeholder {
+  color: rgba(123, 124, 126, 0.719);
+}
+.post-tweet input:focus {
+  outline: none;
+}
+.form-group-2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.8rem;
+}
+
+.post-icons {
+  padding-left: 4rem;
+  color: #1da1f2;
+}
+.post-icons i {
+  padding-right: 10px;
+  font-size: 1.4rem;
+}
+.post-icons i:hover {
+  color: #1da0f2c2;
+  cursor: pointer;
+}
+.form-group-2 .btn {
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  background: #8ed0f9;
+  color: #fff;
+  border-radius: 25px;
+  margin-right: 1rem;
+}
+.form-group-2 .btn:hover {
+  background: #1da1f2;
+  cursor: pointer;
+  
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* User Content */
+.tweets img {
+  display: block;
+  width: 100%;
+}
+.tweets .user-pics img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0.5rem 1rem;
+}
+.tweets {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  font-size: 15px;
+  width: 100%;
+  line-height: 1.75rem;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+.tweets:hover {
+  background: rgb(245, 248, 250);
+}
+.full-name:hover {
+  text-decoration: underline;
+}
+.user-content img {
+  border-radius: 20px;
+}
+.user-content {
+  font-family: "Roboto";
+  padding-right: 1rem;
+  color: rgb(48, 52, 56);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.user-content a {
+  color: rgb(27, 149, 224);
+}
+
+.user-content-box {
+  display: flex;
+  flex-flow: column nowrap;
+  color: rgb(20, 23, 26);
+}
+
+.user-content-box .user-names {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.user-names .full-name {
+  padding-right: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(20, 23, 26);
+}
+.user-names .user-name {
+  padding-right: 10px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgb(101, 119, 134);
+}
+.time {
+  color: rgb(101, 119, 134);
+}
+.user-names i {
+  padding-top: 0.6rem;
+  margin-left: 50%;
+  color: rgb(101, 119, 134);
+
+}
+.content-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 4rem 1rem 0;
+}
+
+.content-icons i {
+  color: rgb(101, 119, 134);
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+.content-icons i:last-child {
+  font-size: 14px;
+}
+
+.content-icons .blue:hover {
+  color: rgba(29, 161,242,1.00);
+}
+.content-icons .green:hover {
+  color: rgb(23 191 99);
+}
+.content-icons .red:hover {
+  color: rgb(224, 36, 94);
+}
+.content-icons .blue:hover {
+  color: rgba(29, 161,242,1.00);
+}
+
+/* Right Navbar */
+.search-box {
+  border: none;
+  border-radius: 25px;
+  padding: 0.1rem 1rem;
+  background: rgb(230, 236, 240);
+  margin-top: 0.5rem;
+  white-space: nowrap;
+}
+.search-box i {
+  color: rgb(101, 119, 134);
+  font-size: 0.9rem;
+}
+.search-box input {
+  padding: 0.8rem 8rem 0.8rem 0.2rem;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  background: rgb(230, 236, 240);
+}
+
+/* Trending Nav Items */
+.nav-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+.nav-list:hover {
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+.nav-list a {
+    color: rgb(27, 149, 224);
+}
+.nav-list:last-child {
+  font-size: 1rem;
+  border-bottom: none;
+}
+.trend-list {
+  display: flex;
+  flex-flow: column nowrap;
+  
+}
+
+.trends {
+  background: rgb(245, 248, 250);
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+.trends .header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+
+.header h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.header i {
+  color: rgba(29,161,242,1.00);
+  background: rgb(245, 248, 250);
+  padding: 0.5rem;
+  border-radius: 50%
+}
+.header i:hover {
+  background: rgba(29, 161, 242, 0.1);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(20, 23, 26);
+}
+
+.sub-text {
+  font-size: 13px;
+  color: rgb(101, 119, 134);
+}
+
+.nav-list .trend-icon {
+  font-size: 13px;
+  color:  rgb(101, 119, 134);
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.footer-links i {
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+.footer-links i:hover {
+    background: rgb(245, 248, 250);
+    padding: 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-copyright {
+  align-self: flex-start;
+}
+
+.follow-users-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  font-size: 15px;
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+.related-followers .sub-text {
+  font-size: 14px;
+  padding-left: 2.1rem;
+}
+.related-followers i {
+  font-size: 0.7rem;
+  padding-right: 8px;
+}
+.follow-header .main-text {
+  font-size: 19px;
+  font-weight: 800;
+}
+.full-name h1:hover {
+  text-decoration: underline;
+}
+.user-name .sub-text {
+  font-size: 17px;
+  color: rgb(101, 119, 134);
+}
+.follow-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+  border-top: 10px solid rgb(230, 236, 240);
+}
+
+.follow-header i {
+  font-size: 13px;
+  align-self: center;
+  cursor: pointer;
+}
+.user-profile img {
+  display: inline-block;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center; 
+}
+
+.follow-user {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.4rem 1rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+.follow-user:hover {
+  background: rgb(245, 248, 250);
+}
+.user-profile {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.user-profile-content {
+  width: 100%;
+  padding-bottom: 0.3rem;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+.bio-container{
+  font-family: "Roboto";
+}
+.bio-container a{
+  color:rgb(29,161,242);
+}
+.bio-container a:hover, .user-content a:hover {
+  text-decoration: underline;
+}
+
+.follow-btn a{
+  font-weight: bold;
+  color: rgb(29,161,242);
+  background: #fff;
+  padding: 0.3rem 1.1rem;
+  border: 1px solid rgba(29,161,242,1.00);
+  border-radius: 25px;
+}
+
+.follow-btn a:hover {
+  background:  rgba(29, 161, 242, 0.1);;
+}
+
+.follow-footer {
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+.follow-footer a {
+  color: rgb(29,161,242);
+  font-size: 15px;
+  font-weight: 400;
+}
+.follow-footer:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.pagnation {
+  margin: 1rem 0;
+  text-align: center;
+}
+.pagnation a {
+  color: #fff;
+  background: #1da1f2;
+  padding: 0.3rem 1rem;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+.pagnation a:hover {
+  background: #198ed6;
+}
+
